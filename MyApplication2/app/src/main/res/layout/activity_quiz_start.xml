@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizStart"
+    android:background="@drawable/quiz_app">
+
+    <TextView
+        android:id="@+id/totalQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Questions: 3"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:textSize="20dp"
+        android:layout_above="@id/answersLayout"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/answersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/answerA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Answer A"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/answerB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Answer B"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/answerC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Answer C"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/answerD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Answer D"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:id="@+id/navigationButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Previous"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Next"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Submit"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
